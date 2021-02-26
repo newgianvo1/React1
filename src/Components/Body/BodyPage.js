@@ -15,7 +15,7 @@ const Body = () => {
 
                 </div>
                 <div className="col-md-3">
-             <img className="ImageNSV"  alt="NSV" src={window.location.origin + '/img/icon.jpg'}  />
+             <img className="ImageNSV"  alt="NSV" src={window.location.origin + '/img/icon.png'}  />
                 </div>
              </div>
            

@@ -15,7 +15,7 @@ class Navbar extends Component {
             <nav className="NavbarItems">
 
                 <div>
-                <img className="NavbarImg" src={window.location.origin + '/img/logo.jpg'} alt="NSV"/>
+                <img className="NavbarImg" src={window.location.origin + '/img/logo.png'} alt="NSV"/>
 
                 </div>
 
