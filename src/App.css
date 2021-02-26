@@ -1,7 +1,94 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+/****************************/
+/*        GENERAL           */
+/****************************/
+
+body{
+  margin:0;
+  max-width: 1600px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+h5{
+  margin-bottom: 20px;
+  color: rgba(15,184,18,.97);
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+/****************************/
+/*     MAIN CONTAINER       */
+/****************************/
+
+.main_container{
+  margin: auto 20px;
+}
+
+.container-fluid{
+  text-align: center;
+  margin: 40px auto;
+}
+
+.odd, .even{
+  display: flex;
+  justify-content: space-between;
+  min-height: 200px;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.second{
+  font-size: 14px;
+  background-color: white;
+  padding: 10px 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  border-left: 4px solid rgba(15,184,18,.97);
+}
+
+.second p{
+  margin-bottom: 4px;
+}
+
+.even .first{
+  text-align: right;
+}
+
+.even .second{
+  order:-1;
+}
+
+.first, .second{
+  width: 50%;
+  margin: auto 20px;
+}
+
+@media screen and (max-width: 700px){
+  body{
+    text-align: center;
   }
-  
+
+  h1{
+    font-size: 25px;
+  }
+
+  .odd,
+  .even{
+    display: block;
+  }
+
+  .even .first{
+    text-align: center;
+  }
+  .first, .second{
+    width: 90%;
+    margin: 25px auto;
+    text-align: center;
+  }
+}
