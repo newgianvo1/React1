@@ -4,16 +4,7 @@ import Body from './Components/Body/BodyPage'
 function App() {
   return (
    <div className="App">
-
-     <Navbar>
-
-     </Navbar>
-
-    <Body>
-
-    </Body>
-
-
+    <Body/>
    </div>
   );
 }
