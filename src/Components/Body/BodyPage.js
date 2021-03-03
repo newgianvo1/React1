@@ -1,16 +1,40 @@
 
 
 import React from 'react'
-import './BodyPage.css'
-
-
-
+import './Header.css'
 
 const Body = () => {
+
+
     return ( 
+        
+
+
+
        <main>
+
+            <div className="topnav">
+
+            <br></br>
+            <img className="ImageNSV" alt="NSV" width={"120px"} src={window.location.origin + '/img/logo.png'}  />
+
+            <a className="active" href="#home">Home</a>
+            <a href="#research">Research Institute Projects</a>
+            <a href="#press">Press</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#contact">Contact</a>
+            <a className="elipse" href="#donate">Donate</a>
+            <br></br>
+            <br></br>
+          
+
+            </div>
+          
+        
         <section className="container-fluid" >
-            <img className="ImageNSV" alt="NSV" width={"160px"} src={window.location.origin + '/img/icon.png'}  />
+            
+        <img className="ImageNSV1" alt="NSV" width={"160px"} src={window.location.origin + '/img/icon.png'}  />
+
         </section>
 
         <section className="main_container">
@@ -96,8 +120,59 @@ const Body = () => {
               </div>
 
         </section>
+
+
+
+        <div className="container-fluid-footer" >
+            <br></br>
+
+      
+
+  <div className="row text-white font-weight-bold text-center pt-3 pb-4">
+    <div className="col-6 col-xl-3 col-lg- col-md-2 border-right footer">
+      {/* <p>Home</p> */}
+      <a href="#"><p>Home</p></a>
+            <p>NoSchoolViolence</p>
+            <p>Seattle | Washington</p>
+
+    </div>
+    <div className="col-6 col-xl-3 col-lg- col-md-2 border-right footer">
+      <a href="#"><p>Research Institute of project</p></a>
+     
+    </div>
+    <div className="col-6 col-xl-3 col-lg- col-md-2 border-right footer">
+      <a href="#"><p className="text-green">Press</p></a>
+    </div>
+    <div className=" col-6 col-xl-3 col-lg- col-md-2 footer">
+      
+      <a href="#"><p>Action</p></a>
+      <a href="#"><p>Volunter</p></a>
+      <a href="#"><p>Contact</p></a>
+      <a href="#"><p>Donate</p></a>
+
+    </div>
+
+  
+  </div>
+  <div className="col-12 text-center text-white font-weight-bold pb-4">
+
+  <i class="fab fa-facebook-f"></i>
+  
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-linkedin-in"></i>
+    <br></br>
+
+    <span>Copyright 2021 - All rights reserved</span>
+  
+      </div>
+</div>
+
+
       </main>
      );
+   
+     
 }
- 
+
 export default Body;
