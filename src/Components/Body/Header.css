@@ -54,5 +54,10 @@
     background:#363636;
   }
 
+  .nav-list-inline{
+    display: flex;
+    justify-content: center;
+  }
+
  
   

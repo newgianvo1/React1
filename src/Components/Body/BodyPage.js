@@ -8,7 +8,7 @@ const Body = () => {
 
     return ( 
         
-
+     
 
 
        <main>
@@ -129,26 +129,26 @@ const Body = () => {
       
 
   <div className="row text-white font-weight-bold text-center pt-3 pb-4">
-    <div className="col-6 col-xl-3 col-lg- col-md-2 border-right footer">
+    <div className="col-12  col-lg-3 col-md-3 col-xs-12  border-right footer">
       {/* <p>Home</p> */}
-      <a href="#"><p>Home</p></a>
+      <a  className="text-white" href="#"><p>Home</p></a>
             <p>NoSchoolViolence</p>
             <p>Seattle | Washington</p>
 
     </div>
-    <div className="col-6 col-xl-3 col-lg- col-md-2 border-right footer">
-      <a href="#"><p>Research Institute of project</p></a>
+    <div className="col-12 col-lg-3 col-md-3  col-xs-12  border-right footer">
+      <a  className="text-white" href="#"><p>Research Institute of project</p></a>
      
     </div>
-    <div className="col-6 col-xl-3 col-lg- col-md-2 border-right footer">
-      <a href="#"><p className="text-green">Press</p></a>
+    <div className="col-12  col-lg-3 col-md-3  col-xs-12 border-right footer">
+      <a className="text-white" href="#"><p className="text-green">Press</p></a>
     </div>
-    <div className=" col-6 col-xl-3 col-lg- col-md-2 footer">
+    <div className=" col-12 col-xs-12  col-lg-3 col-md-3   col-xs-12 footer">
       
-      <a href="#"><p>Action</p></a>
-      <a href="#"><p>Volunter</p></a>
-      <a href="#"><p>Contact</p></a>
-      <a href="#"><p>Donate</p></a>
+      <a className="text-white" ><p>Action</p></a>
+      <a  className="text-white" href="#"><p>Volunter</p></a>
+      <a  className="text-white" href="#"><p>Contact</p></a>
+      <a  className="text-white" href="#"><p>Donate</p></a>
 
     </div>
 
@@ -156,13 +156,41 @@ const Body = () => {
   </div>
   <div className="col-12 text-center text-white font-weight-bold pb-4">
 
-  <i class="fab fa-facebook-f"></i>
-  
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-linkedin-in"></i>
-    <br></br>
+          
 
+
+                <div className="col-md-12">
+
+
+                        <div className="pull-right flip social-media " role="navigation">
+                                <ul className="nav-list-inline">
+                                    <li className="list-inline-item facebook">
+                                        <a href="https://www.facebook.com/noschoolviolence.org/">
+                                            <i className="text-white fab fa-facebook-f"></i>
+
+                                        </a>
+                                    </li>
+                                    
+                                    <li className="list-inline-item instagram">
+                                        <a href="https://www.instagram.com/noschoolviolence/">
+                                        <i className="text-white fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li className="list-inline-item twiter">
+                                        <a href="https://twitter.com/NoScholViolence">
+                                        <i className="text-white fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    
+                                    <li className="list-inline-item linkedin">
+                                        <a href="https://www.linkedin.com/company/noschoolviolence-org">
+                                        <i className=" text-white fab fa-linkedin-in"></i>   
+                                        </a>
+                                        </li>	
+                                </ul> 
+                        </div>
+
+            </div>
     <span>Copyright 2021 - All rights reserved</span>
   
       </div>
