@@ -124,33 +124,30 @@ const Body = () => {
 
 
         <div className="container-fluid-footer" >
-            <br></br>
 
       
+            <div className="row text-white font-weight-bold text-center pt-3 pb-4">
+                <div className="col-12  col-lg-3 col-md-3  border-right footer">
+                <a  className="text-white" href="#"><p>Home</p></a>
+                        <p>NoSchoolViolence</p>
+                        <p>Seattle | Washington</p>
 
-  <div className="row text-white font-weight-bold text-center pt-3 pb-4">
-    <div className="col-12  col-lg-3 col-md-3 col-xs-12  border-right footer">
-      {/* <p>Home</p> */}
-      <a  className="text-white" href="#"><p>Home</p></a>
-            <p>NoSchoolViolence</p>
-            <p>Seattle | Washington</p>
+                </div>
+                <div className="col-12 col-lg-3 col-md-3    border-right footer">
+                <a  className="text-white" href="#"><p>Research Institute of project</p></a>
+                
+                </div>
+                <div className="col-12  col-lg-3 col-md-3   border-right footer">
+                <a className="text-white" href="#"><p className="text-green">Press</p></a>
+                </div>
+                <div className=" col-12 col-xs-12  col-lg-3 col-md-3   footer">
+                
+                <a className="text-white" ><p>Action</p></a>
+                <a  className="text-white" href="#"><p>Volunter</p></a>
+                <a  className="text-white" href="#"><p>Contact</p></a>
+                <a  className="text-white" href="#"><p>Donate</p></a>
 
-    </div>
-    <div className="col-12 col-lg-3 col-md-3  col-xs-12  border-right footer">
-      <a  className="text-white" href="#"><p>Research Institute of project</p></a>
-     
-    </div>
-    <div className="col-12  col-lg-3 col-md-3  col-xs-12 border-right footer">
-      <a className="text-white" href="#"><p className="text-green">Press</p></a>
-    </div>
-    <div className=" col-12 col-xs-12  col-lg-3 col-md-3   col-xs-12 footer">
-      
-      <a className="text-white" ><p>Action</p></a>
-      <a  className="text-white" href="#"><p>Volunter</p></a>
-      <a  className="text-white" href="#"><p>Contact</p></a>
-      <a  className="text-white" href="#"><p>Donate</p></a>
-
-    </div>
+                </div>
 
   
   </div>
