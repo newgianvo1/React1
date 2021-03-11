@@ -8,8 +8,8 @@ const Body = () => {
 
     function navSlide() {
         const burger = document.querySelector(".burger");
-        const nav = document.querySelector(".nav-links");
-        const navLinks = document.querySelectorAll(".nav-links li");
+        const nav = document.querySelector("#menu .nav-links");
+        const navLinks = document.querySelectorAll("#menu .nav-links li");
 
         burger.addEventListener("click", () => {
             //Toggle Nav
@@ -48,7 +48,7 @@ const Body = () => {
                 </div>
 
 
-                <div className="burger" onClick={navSlide}>
+                <div onClick={navSlide} className="burger" >
                     <div className="line1"></div>
                     <div className="line2"></div>
                     <div className="line3"></div>
@@ -57,7 +57,7 @@ const Body = () => {
 
                 <nav id="menu">
 
-                    <ul class="nav-links">
+                    <ul className="nav-links">
                         <li>
                             <a className="active" href="#home">Home</a>
                         </li>
