@@ -2,9 +2,34 @@
 
 import React from 'react'
 import './Header.css'
+import './Responsive.css'
 
 const Body = () => {
 
+    function navSlide() {
+        const burger = document.querySelector(".burger");
+        const nav = document.querySelector(".nav-links");
+        const navLinks = document.querySelectorAll(".nav-links li");
+
+        burger.addEventListener("click", () => {
+            //Toggle Nav
+            nav.classList.toggle("nav-active");
+
+            //Animate Links
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = ""
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                }
+            });
+            //Burger Animation
+            burger.classList.toggle("toggle");
+        });
+
+    }
+
+    // navSlide();
 
     return (
 
@@ -12,23 +37,54 @@ const Body = () => {
 
 
         <main>
-            
+
 
             <div className="topnav">
 
-                <br></br>
-                <img className="ImageNSV" alt="NSV" width={"120px"} src={window.location.origin + '/img/logo.png'} />
 
-                <a className="active" href="#home">Home</a>
-                <a href="#research">Research Institute Projects</a>
-                <a href="#press">Press</a>
-                <a href="#volunteer">Volunteer</a>
-                <a href="#contact">Contact</a>
-                <a className="elipse" href="#donate">Donate</a>
-                <br></br>
-                <br></br>
+                <div id="logo">
+                    <img className="ImageNSV" alt="NSV" src={window.location.origin + '/img/logo.png'} />
+
+                </div>
 
 
+                <div className="burger" onClick={navSlide}>
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line3"></div>
+                </div>
+                <br></br>
+
+                <nav id="menu">
+
+                    <ul class="nav-links">
+                        <li>
+                            <a className="active" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#research">Research Institute Projects</a>
+                        </li>
+                        <li>
+                            <a href="#press">Press</a>
+                        </li>
+                        <li>
+                            <a href="#volunteer">Volunteer</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a className="elipse" href="#donate">Donate</a>
+                        </li>
+
+                    </ul>
+
+                    <br></br>
+                    <br></br>
+
+
+
+                </nav>
             </div>
 
 

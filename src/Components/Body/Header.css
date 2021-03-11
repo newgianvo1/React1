@@ -10,9 +10,7 @@
     
   }
 
-  .ImageNSV{
-    float:left;
-  }
+  
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -54,5 +52,14 @@
     background:#363636;
   }
 
- 
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.burger {
+  display: none;
+}
   
