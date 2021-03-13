@@ -2,19 +2,57 @@
 /*        GENERAL           */
 /****************************/
 
+@font-face{
+  src: url(./assets/omnes/omnes-regular-webfont.ttf);
+  font-family: omnes, sans-serif;
+}
+
 body{
   margin:0;
-  max-width: 1600px;
+  max-width: fit-content;
+  font-size: 1.8vw;
+  font-family: omnes, sans-serif;
+}
+
+
+.rip{
+  text-align: center;
+}
+
+.ImageNSV{
+  min-width: 160px;
+  max-width: 20vw;
+}
+
+.brain{
+  margin: 4vw auto;
+  min-width: 80px;
+  max-width: 8vw;
+}
+
+.icons{
+  min-width: 11px;
+  max-width: 1.6vw;
+  margin: 0 1.5vw 0.5vw;
+}
+
+.icons2{
+  min-width: 15px;
+  max-width: 2.5vw;
+  margin: 0 1.5vw 0.3vw;
 }
 
 h1{
-    text-align: center;
-    font-size: 30px;
+    font-size: 2.5vw;
+    font-family: omnes, sans-serif;
 }
 
 h5{
   margin-bottom: 20px;
   color: rgba(15,184,18,.97);
+  font-family: omnes, sans-serif;
+  font-size: 2.5vw;
+  align-items: baseline;
 }
 
 ul{
@@ -22,6 +60,11 @@ ul{
   padding: 0;
 }
 
+.btn-secondary{
+  margin-top: 2vw;
+  font-size: 2.2vw;
+  font-family: omnes, sans-serif;
+}
 /****************************/
 /*     MAIN CONTAINER       */
 /****************************/
@@ -32,28 +75,27 @@ ul{
 
 .container-fluid{
   text-align: center;
-  margin: 40px auto;
+  margin: 6vw auto;
 }
 
 .odd, .even{
   display: flex;
   justify-content: space-between;
-  min-height: 200px;
   align-items: center;
-  margin: 40px auto;
+  margin: 7vw auto;
 }
 
 .second{
-  font-size: 14px;
+  font-size: 1.6vw;
   background-color: white;
-  padding: 10px 20px;
+  padding: 2vw 2.5vw;
   text-align: justify;
   text-justify: inter-word;
   border-left: 4px solid rgba(15,184,18,.97);
 }
 
 .second p{
-  margin-bottom: 4px;
+  margin-bottom: 0.5vw;
 }
 
 .even .first{
@@ -66,16 +108,35 @@ ul{
 
 .first, .second{
   width: 50%;
-  margin: auto 20px;
+  margin: auto 3vw;
 }
+
+
+/*****************************/
+/*        RESPONSIVE         */
+/*****************************/
+
 
 @media screen and (max-width: 700px){
   body{
     text-align: center;
+    font-size: 17px;
   }
 
   h1{
-    font-size: 25px;
+    font-size: 22px;
+  }
+
+  h5{
+    font-size: 18px;
+  }
+
+  .btn-secondary{
+    font-size: 15px;
+  }
+
+  .container-fluid{
+    margin: 40px auto;
   }
 
   .odd,
@@ -90,7 +151,6 @@ ul{
     width: 90%;
     margin: 25px auto;
     text-align: center;
+    font-size: 14px;
   }
-  
-
 }
