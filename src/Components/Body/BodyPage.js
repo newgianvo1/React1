@@ -3,14 +3,13 @@
 import React from 'react'
 import './Header.css'
 import './Responsive.css'
-
 const Body = () => {
-
     function navSlide() {
         const burger = document.querySelector(".burger");
+        
         const nav = document.querySelector("#menu .nav-links");
         const navLinks = document.querySelectorAll("#menu .nav-links li");
-
+        console.log(navLinks);
         burger.addEventListener("click", () => {
             //Toggle Nav
             nav.classList.toggle("nav-active");
@@ -19,23 +18,20 @@ const Body = () => {
             navLinks.forEach((link, index) => {
                 if (link.style.animation) {
                     link.style.animation = ""
+                    document.documentElement.style.overflow = 'auto';  // firefox, chrome
+                    document.body.scroll = "yes"; // ie only
                 } else {
                     link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+                    document.body.scroll = "no"; // ie only
                 }
             });
             //Burger Animation
             burger.classList.toggle("toggle");
         });
-
     }
-
     // navSlide();
-
     return (
-
-
-
-
         <main>
 
 
@@ -48,7 +44,7 @@ const Body = () => {
                 </div>
 
 
-                <div onClick={navSlide} className="burger" >
+                <div  className="burger" onClick={navSlide} >
                     <div className="line1"></div>
                     <div className="line2"></div>
                     <div className="line3"></div>
@@ -59,7 +55,7 @@ const Body = () => {
 
                     <ul className="nav-links">
                         <li>
-                            <a className="active" href="#home">Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
                             <a href="#research">Research Institute Projects</a>
@@ -81,9 +77,6 @@ const Body = () => {
 
                     <br></br>
                     <br></br>
-
-
-
                 </nav>
             </div>
 
@@ -105,6 +98,7 @@ const Body = () => {
                 {/*************************/
            /*       Lantern         */
            /*************************/}
+
 
                 <div className="odd" >
                     <ul className="first">

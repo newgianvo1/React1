@@ -1,13 +1,30 @@
 @media(max-width:19000px){
+   
     #menu ul li {
         list-style-type: none;
 		display: inline;
+        border-left: 2px solid black;
+        height: 70px;
 
+    }
+
+    
+        #menu ul li:nth-child(1){
+            border: none;
+            }
+
+    #menu ul li:last-child{
+         border:none;
+         }
+         
+    #menu a{
+        
+        color:#4a4a4a;
     }
     .ImageNSV {
         float:left;
         width:150px;
-        margin:0 auto;
+        margin:10px auto;
     }
     .ImageNSV1{
         height:50%;
@@ -52,6 +69,7 @@
 
     #menu a{
         font-size: 14px;
+        color:#4a4a4a;
     }
     .ImageNSV1{
         height:50%;
@@ -78,9 +96,12 @@
         font-size: 10px;
     }
     .ImageNSV {
-        float:left;
-        width:90px;
-        margin:0 auto;
+        float: left;
+       
+        width:25%;
+        margin:10px auto;
+        padding: 20px;
+       
     }
     .ImageNSV1{
         height:50%;
@@ -96,10 +117,14 @@
 
 
 @media ( max-width:569px){
+
+    #menu ul li{
+        border-left: 0px solid black;
+    }
     
 
     .nav-links {
-        margin-top:69px;
+        margin-top:59px;
         position: fixed;
         right: 0px;
         height: 100%;
@@ -115,8 +140,11 @@
     
     .nav-links li {
         opacity: 0;
+        height:80px;
        
     }
+
+  
     #menu a{
        
             font-size: 17px;
