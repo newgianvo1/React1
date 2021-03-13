@@ -8,11 +8,13 @@ import covid from '../../assets/covid_icon.png'
 import language from '../../assets/language_icon.png'
 
 import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
 
 
 const Body = () => {
     return (
       <main>
+         <Header/>
         <section className="container-fluid" >
             <img className="ImageNSV" alt="NSV" src={window.location.origin + '/img/icon.png'}  />
         </section>
