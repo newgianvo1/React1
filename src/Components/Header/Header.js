@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-// import { MenuItems } from "./MenuItem"
-// import './Navbar.css'
 import './Header.css'
 class Header extends Component {
 
@@ -14,25 +12,28 @@ class Header extends Component {
             const nav = document.querySelector("#menu .nav-links");
             const navLinks = document.querySelectorAll("#menu .nav-links li");
             console.log(navLinks);
-            burger.addEventListener("click", () => {
-                //Toggle Nav
-                nav.classList.toggle("nav-active");
+            
+            //Toggle Nav
+            nav.classList.toggle("nav-active");
     
-                //Animate Links
-                navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = ""
-                        document.documentElement.style.overflow = 'auto';  // firefox, chrome
-                        document.body.scroll = "yes"; // ie only
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-                        document.documentElement.style.overflow = 'hidden';  // firefox, chrome
-                        document.body.scroll = "no"; // ie only
-                    }
-                });
-                //Burger Animation
-                burger.classList.toggle("toggle");
+            //Animate Links
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = ""
+                    document.documentElement.style.overflow = 'auto';  // firefox, chrome
+                    document.querySelector(".container-fluid").style.marginTop = "40px";
+                    document.body.scroll = "yes"; // ie only
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 10 + 0.5}s`;
+                    document.documentElement.style.display = 'block';  // firefox, chrome
+                    document.querySelector(".container-fluid").style.marginTop = "530px";
+                    document.body.scroll = "yes"; // ie only
+                }
             });
+                
+            //Burger Animation
+            burger.classList.toggle("toggle");
+      
         }
 
         return (
