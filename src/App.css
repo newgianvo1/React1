@@ -2,11 +2,6 @@
 /*        GENERAL           */
 /****************************/
 
-@font-face{
-  src: url(./assets/omnes/omnes-regular-webfont.ttf);
-  font-family: omnes, sans-serif;
-}
-
 body{
   margin:0;
   max-width: fit-content;
