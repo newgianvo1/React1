@@ -1,28 +1,30 @@
 
-
 import React from 'react'
 import '../../App.css'
-import lantern from '../../assets/lantern_icon.png'
-import athena from '../../assets/athena_icon.png'
-import covid from '../../assets/covid_icon.png'
-import language from '../../assets/language_icon.png'
 
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
+/*    IMAGES AS VARIABLES  ----------------------------------------------------------- */
 
+var path = process.env.PUBLIC_URL;
+var icon = "/img/main/icon.png";
+var brain = "img/main/brain.png";
+var lantern = "/img/main/lantern_icon.png";
+var athena = "/img/main/athena_icon.png";
+var covid = "/img/main/covid_icon.png";
+var language = "/img/main/language_icon.png";
+
+/*-------------------------------------------------------------------------------------*/
 
 const Body = () => {
     return (
       <main>
-         <Header/>
         <section className="container-fluid" >
-            <img className="ImageNSV" alt="NSV" src={window.location.origin + '/img/icon.png'}  />
+            <img className="ImageNSV" alt="NSV" src={path + icon}  />
         </section>
 
         <section className="main_container">
             <div className="rip">
                 <h1>Research Institute Projects</h1>
-                <img className="brain" src={window.location.origin + '/img/brain.png'}/>
+                <img className="brain" src={path + brain}/>
             </div>
 
           {/*************************/
@@ -31,7 +33,7 @@ const Body = () => {
 
               <div className="odd" >
                     <ul className="first">
-                        <li><h5>Lantern <img className="icons" src={lantern}/></h5></li>
+                        <li><h5>Lantern<img className="icons" src={path + lantern}/></h5></li>
                         <li><p>Designed for parents,teachers and school counselors</p></li>
                         <li><button type="button" className="btn btn-secondary">Open Tool</button></li>
                     </ul>
@@ -50,7 +52,7 @@ const Body = () => {
 
               <div className="even" >
                   <ul className="first">
-                      <li><h5><img className="icons" src={athena}/>Athena</h5></li>
+                      <li><h5><img className="icons" src={path + athena}/>Athena</h5></li>
                       <li><p>Designed for teachers, school counselors, administrators, law enforcement
                           and researchers/policy analyst.</p></li>
                       <li><button type="button" className="btn btn-secondary">Open Tool</button></li>
@@ -70,7 +72,7 @@ const Body = () => {
 
               <div className="odd" >
                     <ul className="first">
-                        <li><h5>COVID School Rentry<img className="icons2" src={covid}/></h5></li>
+                        <li><h5>COVID School Rentry<img className="icons2" src={path + covid}/></h5></li>
                         <li><p>Designed to prepare schools for post-COVID schoool violence</p></li>
                         <li><button type="button" className="btn btn-secondary">Open Tool</button></li>
                     </ul>
@@ -89,7 +91,7 @@ const Body = () => {
 
               <div className="even" >
                   <ul className="first">
-                      <li><h5><img className="icons2" src={language}/>Language of Violence</h5></li>
+                      <li><h5><img className="icons2" src={path + language}/>Language of Violence</h5></li>
                       <li><p>Designed to provide insights into what correlations between schools shooters
                       and violent domestic organization mean.</p></li>
                       <li><button type="button" className="btn btn-secondary">Open Tool</button></li>
@@ -104,11 +106,9 @@ const Body = () => {
 
         </section>
 
-                <Footer />
-
-
       </main>
      );
 }
 
 export default Body;
+
